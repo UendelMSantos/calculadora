@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bem-Vindo a Calculadora</title>
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<!-- Bootstrap --->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+</head>
+<body style="background: #D9D9D9">
+
+	<div class="container">
+		<div class="row">
+			<div class="col d-flex justify-content-center">
+				<br />
+
+					<div class="calculadora">
+						<input id="resultado" type="text" placeholder="0" disabled="disabled" class="form-control resultado">
+					
+						<div class="row"> <!-- Primeira Linha -->
+							<button onclick="calcular('acao', 'c')" type="button" class="btn btn-dark btn-lg clear font-weight-light">C</button>
+							<button onclick="calcular('acao', '/')" type="button" class="btn btn-dark btn-lg font-weight-light">/</button>
+							<button onclick="calcular('acao', '*')" type="button" class="btn btn-dark btn-lg font-weight-light">x</button>
+						</div>
+
+						<div class="row"><!-- Segunda Linha -->
+							<button  onclick="calcular('numero', 7)" type="button" class="btn btn-dark btn-lg font-weight-light">7</button>
+			              	<button  onclick="calcular('numero', 8)" type="button" class="btn btn-dark btn-lg font-weight-light">8</button>
+			              	<button  onclick="calcular('numero', 9)" type="button" class="btn btn-dark btn-lg font-weight-light">9</button>
+			              	<button  onclick="calcular('acao', '-')" type="button" class="btn btn-dark btn-lg font-weight-light">-</button>
+						</div>
+						<div class="row"><!-- Terceira Linha -->
+							<button  onclick="calcular('numero', 4)" type="button" class="btn btn-dark btn-lg font-weight-light">4</button>
+			              	<button  onclick="calcular('numero', 5)" type="button" class="btn btn-dark btn-lg font-weight-light">5</button>
+			              	<button  onclick="calcular('numero', 6)" type="button" class="btn btn-dark btn-lg font-weight-light">6</button>
+			              	<button  onclick="calcular('acao', '+')" type="button" class="btn btn-dark btn-lg font-weight-light">+</button>
+						</div>
+						<div class="row"><!-- Quarta Linha -->
+							<button  onclick="calcular('numero', 1)" type="button" class="btn btn-dark btn-lg font-weight-light">1</button>
+			              	<button  onclick="calcular('numero', 2)" type="button" class="btn btn-dark btn-lg font-weight-light">2</button>
+			              	<button  onclick="calcular('numero', 3)" type="button" class="btn btn-dark btn-lg font-weight-light">3</button>
+			              	<button  onclick="calcular('acao', '=')" type="button" class="btn btn-dark btn-lg font-weight-light large">=</button>
+						</div>
+						<div class="row" style="margin-top: -60px" >
+	              			<button onclick="calcular('numero', 0)" type="button" class="btn btn-dark zero btn-lg font-weight-light">0</button>
+	              			<button onclick="calcular('acao', '.')" type="button" class="btn btn-dark btn-lg font-weight-light">.</button>
+	            		</div>
+            		</div>
+			</div>
+		</div>
+	</div>
+</body>
+	<script src="js/script.js"></script>
+</html>
